@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx 
   rules:
-  - host: go-web-app.local
+  - host: afc190e570afd494ea317ca970b58ee8-094d19001f2f0cd4.elb.us-east-1.amazonaws.com
     http:
       paths:
       - pathType: Prefix
