@@ -2,15 +2,12 @@
 
 name: CI/CD
 
-# Exclude the workflow to run on changes to the helm chart
+# Trigger the workflow manually or by push to the 'master' branch
 on:
   push:
     branches:
       - master
-    paths-ignore:
-      - 'helm/**'
-      - 'k8s/**'
-      - 'README.md'
+  workflow_dispatch:  # Allows manual triggering from GitHub interface
 
 jobs:
 
